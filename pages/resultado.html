@@ -1,11 +1,29 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Resultado do Cadastro</title>
+    <link rel="stylesheet" href="./../css/style.css">
 </head>
-<body>
-    
+<body onload="mostrarResultado()">    
+<header>
+        <nav>
+            <a href="index.html">Início</a>
+            <a href="classificacao.html">Classificação</a>
+            <a href="cadastro.html">Cadastro</a>
+            <a href="resultado.html">Resultado</a>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Cadastro Realizado </h1>
+        <div id="resultado" class="resultado-box">
+            <!-- preenchido pelo JS -->
+        </div>
+        <a href="cadastro.html">Fazer novo cadastro</a>
+    </main>
+
+    <script src="./../js/script.js"></script>
 </body>
 </html>

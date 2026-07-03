@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro - Seleção Francesa</title>
+    <link rel="stylesheet" href="./../css/style.css">
+</head>
+<body onload="boasVindas()">
+    <header>
+        <nav>
+            <a href="index.html">Início</a>
+            <a href="classificacao.html">Classificação</a>
+            <a href="cadastro.html">Cadastro</a>
+            <a href="resultado.html">Resultado</a>
+        </nav>
+    </header>
+
+    <form >
+        <h1 id="titulo_form" onclick="mudar_text()" onmousemove="mudar_cor()" onmouseout="mudar_cor2()">Cadastro</h1>
+
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome"
+               onfocus="destacar(this)" onblur="normalizar(this)" required>
+               
+
+        <label for="email">E-mail:</label>
+        <input type="email" id="email" name="email"
+               onfocus="destacar(this)" onblur="normalizar(this)" required>
+
+        <label for="senha">Senha:</label>
+        <input type="password" id="senha" name="senha"
+               onfocus="destacar(this)" onblur="normalizar(this)" required>
+
+        <label for="jogador">Jogador favorito:</label>
+        <select id="jogador" name="jogador" onchange="escolherJogador(this)">
+            <option value="    "></option>
+            <option value="Mbappé">Kylian Mbappé</option>
+            <option value="Olise">Michael Olise</option>
+            <option value="Tchouaméni">Aurélien Tchouaméni</option>
+            <option value="Saliba">William Saliba</option>
+            <option value="Maignan">Mike Maignan</option>
+        </select>
+        <p id="msgJogador"></p>
+
+        <button id="btnEnviar" type="submit">Cadastrar</button>
+    </form>
+
+    <script src="./../js/script.js"></script>
+</body>
+</html>

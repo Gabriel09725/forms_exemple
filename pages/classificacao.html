@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Classificação - Grupo I</title>
+    <link rel="stylesheet" href="./../css/style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html">Início</a>
+            <a href="classificacao.html">Classificação</a>
+            <a href="cadastro.html">Cadastro</a>
+            <a href="resultado.html">Resultado</a>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Classificação - Grupo I</h1>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Posição</th>
+                    <th>Seleção</th>
+                    <th>Pontos</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr id="time1" onmouseover="marcarClassificado(this)" onmouseout="resetar(this)">
+                    <td>1º</td><td>França </td><td>9</td>
+                </tr>
+                <tr id="time2" onmouseover="marcarClassificado(this)" onmouseout="resetar(this)">
+                    <td>2º</td><td>Noruega </td><td>6</td>
+                </tr>
+                <tr id="time3" onmouseover="marcar3Classificado(this)" onmouseout="resetar(this)">
+                    <td>3º</td><td>Senegal </td><td>3</td>
+                </tr>
+                <tr id="time4" onmouseover="marcarUltimo(this)" onmouseout="resetar(this)">
+                    <td>4º</td><td>Iraque </td><td>0</td>
+                </tr>
+            </tbody>
+        </table>
+    </main>
+
+    <script src="./../js/script.js"></script>
+</body>
+</html>
